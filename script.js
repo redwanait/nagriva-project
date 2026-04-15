@@ -1495,20 +1495,6 @@ window.addEventListener('error', e => {
   if (e.message && e.message.includes('script error')) return;
 });
 
-// ═══════════════════════════════════════════════════
-// BETA BANNER
-// ═══════════════════════════════════════════════════
-function closeBetaBanner() {
-  const banner = document.getElementById('betaBanner');
-  banner.classList.add('hidden');
-  document.body.classList.remove('has-banner');
-  localStorage.setItem('nagriva-beta-dismissed', '1');
-}
-// Restore dismissed state on reload
-if (localStorage.getItem('nagriva-beta-dismissed') === '1') {
-  document.getElementById('betaBanner').classList.add('hidden');
-  document.body.classList.remove('has-banner');
-}
 
 // ═══════════════════════════════════════════════════
 // PACKAGES: switch active tab in service detail
