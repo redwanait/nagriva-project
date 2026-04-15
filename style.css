@@ -111,13 +111,6 @@ img {
 }
 
 /* ═══════════════════════════════════════════
-   BETA BANNER OFFSET
-═══════════════════════════════════════════ */
-#betaBanner.hidden { display: none !important; }
-body.has-banner nav { top: 38px; }
-body.has-banner { padding-top: 38px; }
-
-/* ═══════════════════════════════════════════
    NAVBAR
 ═══════════════════════════════════════════ */
 nav {
@@ -4881,22 +4874,6 @@ body.has-banner .filters-bar {
    MOBILE RESPONSIVENESS — COMPREHENSIVE FIXES
    (applies on top of existing media queries)
 ═══════════════════════════════════════════ */
-
-/* ── Beta Banner: compact on small screens ── */
-@media(max-width:520px) {
-  #betaBanner {
-    font-size: 11px;
-    padding: 6px 10px;
-    gap: 6px;
-  }
-}
-@media(max-width:380px) {
-  #betaBanner {
-    font-size: 10px;
-    padding: 5px 8px;
-  }
-  #betaBanner strong { font-weight: 700; }
-}
 
 /* ── Hero: center all content when single-column (≤900px) ── */
 @media(max-width:900px) {
